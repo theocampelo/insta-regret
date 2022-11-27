@@ -1,0 +1,150 @@
+send: b'GET /headers HTTP/1.1\r\nHost: httpbin.org\r\nUser-Agent: python-requests/2.25.1\r\nAccept-Encoding: gzip, deflate\r\nAccept: */*\r\nConnection: keep-alive\r\n\r\n'
+reply: 'HTTP/1.1 200 OK\r\n'
+header: Date: Sun, 27 Nov 2022 11:09:31 GMT
+header: Content-Type: application/json
+header: Content-Length: 225
+header: Connection: keep-alive
+header: Server: gunicorn/19.9.0
+header: Access-Control-Allow-Origin: *
+header: Access-Control-Allow-Credentials: true
+* resumindo sessão de login...
+
+[POSTAR COMENTÁRIO]
+* postando comentário: B
+send: b'GET /p/ClLfrmJOZ8o/ HTTP/1.1\r\nHost: www.instagram.com\r\nUser-Agent: python-requests/2.25.1\r\nAccept-Encoding: gzip, deflate\r\nAccept: */*\r\nConnection: keep-alive\r\nCookie: csrftoken=vgd76c4TPM8NBpMAG1ikt1kB2s1ulqeP; ig_did=F88AE012-AD14-4603-8A60-59AC965067EE; ig_nrcb=1; mid=Y4NEXgAEAAFM4lpwi-79kwi0MDlC\r\n\r\n'
+reply: 'HTTP/1.1 200 OK\r\n'
+header: Vary: Accept-Encoding
+header: Content-Encoding: gzip
+header: accept-ch-lifetime: 4838400
+header: accept-ch: sec-ch-prefers-color-scheme
+header: reporting-endpoints: default="https://www.instagram.com/error/ig_web_error_reports/?device_level=unknown"
+header: report-to: {"max_age":259200,"endpoints":[{"url":"https:\/\/www.instagram.com\/error\/ig_web_error_reports\/?device_level=unknown"}]}
+header: document-policy: force-load-at-top
+header: cross-origin-resource-policy: rollout
+header: cross-origin-opener-policy: same-origin-allow-popups
+header: Pragma: no-cache
+header: Cache-Control: private, no-cache, no-store, must-revalidate
+header: Expires: Sat, 01 Jan 2000 00:00:00 GMT
+header: X-Content-Type-Options: nosniff
+header: X-XSS-Protection: 0
+header: X-Frame-Options: DENY
+header: Strict-Transport-Security: max-age=15552000
+header: Content-Type: text/html; charset="utf-8"
+header: X-FB-Debug: WNXFnbVbroTUMXe1Pio6qpF1V0WynXUm6FvaSnlqlet14vFkAoEWCpArAUEt6JN2sAzoDYXoV2YrDTEcjEMUzA==
+header: Date: Sun, 27 Nov 2022 11:09:31 GMT
+header: Priority: u=3,i
+header: X-FB-TRIP-ID: 1679558926
+header: Alt-Svc: h3=":443"; ma=86400
+header: Transfer-Encoding: chunked
+header: Connection: keep-alive
+send: b'GET /api/v1/web/comments/2975611314144649000/add/ HTTP/1.1\r\nHost: www.instagram.com\r\nUser-Agent: python-requests/2.25.1\r\nAccept-Encoding: gzip, deflate\r\nAccept: */*\r\nConnection: keep-alive\r\nCookie: csrftoken=vgd76c4TPM8NBpMAG1ikt1kB2s1ulqeP; ig_did=F88AE012-AD14-4603-8A60-59AC965067EE; ig_nrcb=1; mid=Y4NEXgAEAAFM4lpwi-79kwi0MDlC\r\n\r\n'
+reply: 'HTTP/1.1 302 Found\r\n'
+header: Content-Type: text/html; charset=utf-8
+header: Location: https://www.instagram.com/accounts/login/?next=/api/v1/web/comments/2975611314144649000/add/
+header: Date: Sun, 27 Nov 2022 11:09:31 GMT
+header: Vary: Accept-Language, Cookie
+header: Content-Language: en
+header: Strict-Transport-Security: max-age=31536000
+header: Cache-Control: private, no-cache, no-store, must-revalidate
+header: Pragma: no-cache
+header: Expires: Sat, 01 Jan 2000 00:00:00 GMT
+header: X-Frame-Options: SAMEORIGIN
+header: content-security-policy: report-uri https://www.instagram.com/security/csp_report/; default-src 'self' https://www.instagram.com; img-src data: blob: https://*.fbcdn.net https://*.instagram.com https://*.cdninstagram.com https://*.facebook.com https://*.fbsbx.com https://*.giphy.com; font-src data: https://*.fbcdn.net https://*.instagram.com https://*.cdninstagram.com; media-src 'self' blob: https://www.instagram.com https://*.cdninstagram.com https://*.fbcdn.net; manifest-src 'self' https://www.instagram.com; script-src 'self' https://instagram.com https://www.instagram.com https://*.www.instagram.com https://*.cdninstagram.com wss://www.instagram.com https://*.facebook.com https://*.fbcdn.net https://*.facebook.net 'unsafe-inline' 'unsafe-eval' blob:; style-src 'self' https://*.www.instagram.com https://www.instagram.com 'unsafe-inline'; connect-src 'self' https://instagram.com https://www.instagram.com https://*.www.instagram.com https://graph.instagram.com https://*.graph.instagram.com https://i.instagram.com/graphql_www https://graphql.instagram.com https://*.cdninstagram.com https://api.instagram.com https://i.instagram.com https://*.i.instagram.com https://*.od.instagram.com wss://www.instagram.com wss://edge-chat.instagram.com https://*.facebook.com https://*.fbcdn.net https://*.facebook.net chrome-extension://boadgeojelhgndaghljhdicfkmllpafd blob:; worker-src 'self' blob: https://www.instagram.com; frame-src 'self' https://instagram.com https://www.instagram.com https://*.instagram.com https://staticxx.facebook.com https://www.facebook.com https://web.facebook.com https://connect.facebook.net https://m.facebook.com https://*.fbsbx.com; object-src 'none'; upgrade-insecure-requests
+header: cross-origin-resource-policy: cross-origin
+header: X-Content-Type-Options: nosniff
+header: X-XSS-Protection: 0
+header: x-ig-push-state: c2
+header: x-aed: 74
+header: Access-Control-Expose-Headers: X-IG-Set-WWW-Claim
+header: x-ig-request-elapsed-time-ms: 28
+header: x-ig-peak-time: 1
+header: Set-Cookie: sessionid=""; Domain=instagram.com; expires=Thu, 01-Jan-1970 00:00:00 GMT; Max-Age=0; Path=/
+header: Set-Cookie: sessionid=""; Domain=.instagram.com; expires=Thu, 01-Jan-1970 00:00:00 GMT; Max-Age=0; Path=/
+header: Set-Cookie: sessionid=""; Domain=i.instagram.com; expires=Thu, 01-Jan-1970 00:00:00 GMT; Max-Age=0; Path=/
+header: Set-Cookie: sessionid=""; Domain=.i.instagram.com; expires=Thu, 01-Jan-1970 00:00:00 GMT; Max-Age=0; Path=/
+header: Set-Cookie: sessionid=""; Domain=www.instagram.com; expires=Thu, 01-Jan-1970 00:00:00 GMT; Max-Age=0; Path=/
+header: Set-Cookie: sessionid=""; Domain=.www.instagram.com; expires=Thu, 01-Jan-1970 00:00:00 GMT; Max-Age=0; Path=/
+header: Set-Cookie: sessionid=""; expires=Thu, 01-Jan-1970 00:00:00 GMT; Max-Age=0; Path=/
+header: x-ig-origin-region: ncg
+header: X-FB-TRIP-ID: 1679558926
+header: Alt-Svc: h3=":443"; ma=86400
+header: Connection: keep-alive
+header: Content-Length: 0
+send: b'GET /accounts/login/?next=/api/v1/web/comments/2975611314144649000/add/ HTTP/1.1\r\nHost: www.instagram.com\r\nUser-Agent: python-requests/2.25.1\r\nAccept-Encoding: gzip, deflate\r\nAccept: */*\r\nConnection: keep-alive\r\nCookie: csrftoken=vgd76c4TPM8NBpMAG1ikt1kB2s1ulqeP; ig_did=F88AE012-AD14-4603-8A60-59AC965067EE; ig_nrcb=1; mid=Y4NEXgAEAAFM4lpwi-79kwi0MDlC\r\n\r\n'
+reply: 'HTTP/1.1 200 OK\r\n'
+header: Vary: Accept-Encoding
+header: Content-Encoding: gzip
+header: accept-ch-lifetime: 4838400
+header: accept-ch: sec-ch-prefers-color-scheme
+header: reporting-endpoints: default="https://www.instagram.com/error/ig_web_error_reports/?device_level=unknown"
+header: report-to: {"max_age":259200,"endpoints":[{"url":"https:\/\/www.instagram.com\/error\/ig_web_error_reports\/?device_level=unknown"}]}
+header: document-policy: force-load-at-top
+header: cross-origin-resource-policy: rollout
+header: cross-origin-opener-policy: unsafe-none
+header: Pragma: no-cache
+header: Cache-Control: private, no-cache, no-store, must-revalidate
+header: Expires: Sat, 01 Jan 2000 00:00:00 GMT
+header: X-Content-Type-Options: nosniff
+header: X-XSS-Protection: 0
+header: X-Frame-Options: DENY
+header: Strict-Transport-Security: max-age=15552000
+header: Content-Type: text/html; charset="utf-8"
+header: X-FB-Debug: K8txi0x1ajcXEimXX6Re9fsOyvfUBVy/bXUEwDuMH31YjwxQqPr9LNZwpNvlRxEodC7PJOesCAliGUB4s2jT9A==
+header: Date: Sun, 27 Nov 2022 11:09:31 GMT
+header: X-FB-TRIP-ID: 1679558926
+header: Alt-Svc: h3=":443"; ma=86400
+header: Transfer-Encoding: chunked
+header: Connection: keep-alive
+https://www.instagram.com/api/v1/web/comments/2975611314144649000/add/
+send: b'POST /api/v1/web/comments/2975611314144649000/add/ HTTP/1.1\r\nHost: www.instagram.com\r\nuser-agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:107.0) Gecko/20100101 Firefox/107.0\r\nAccept-Encoding: gzip, deflate\r\nAccept: */*\r\nConnection: keep-alive\r\nx-requested-with: XMLHttpRequest\r\nreferer: https://www.instagram.com/p/ClLfrmJOZ8o/\r\nx-csrftoken: vgd76c4TPM8NBpMAG1ikt1kB2s1ulqeP\r\nCookie: csrftoken=vgd76c4TPM8NBpMAG1ikt1kB2s1ulqeP; ig_did=F88AE012-AD14-4603-8A60-59AC965067EE; ig_nrcb=1; mid=Y4NEXgAEAAFM4lpwi-79kwi0MDlC\r\nContent-Length: 14\r\nContent-Type: application/x-www-form-urlencoded\r\n\r\n'
+send: b'comment_text=B'
+reply: 'HTTP/1.1 302 Found\r\n'
+header: Content-Type: text/html; charset=utf-8
+header: Location: https://www.instagram.com/accounts/login/?next=/api/v1/web/comments/2975611314144649000/add/
+header: Date: Sun, 27 Nov 2022 11:09:32 GMT
+header: Vary: Accept-Language, Cookie
+header: Content-Language: en
+header: Strict-Transport-Security: max-age=31536000
+header: Cache-Control: private, no-cache, no-store, must-revalidate
+header: Pragma: no-cache
+header: Expires: Sat, 01 Jan 2000 00:00:00 GMT
+header: X-Frame-Options: SAMEORIGIN
+header: content-security-policy: report-uri https://www.instagram.com/security/csp_report/; default-src 'self' https://www.instagram.com; img-src data: blob: https://*.fbcdn.net https://*.instagram.com https://*.cdninstagram.com https://*.facebook.com https://*.fbsbx.com https://*.giphy.com; font-src data: https://*.fbcdn.net https://*.instagram.com https://*.cdninstagram.com; media-src 'self' blob: https://www.instagram.com https://*.cdninstagram.com https://*.fbcdn.net; manifest-src 'self' https://www.instagram.com; script-src 'self' https://instagram.com https://www.instagram.com https://*.www.instagram.com https://*.cdninstagram.com wss://www.instagram.com https://*.facebook.com https://*.fbcdn.net https://*.facebook.net 'unsafe-inline' 'unsafe-eval' blob:; style-src 'self' https://*.www.instagram.com https://www.instagram.com 'unsafe-inline'; connect-src 'self' https://instagram.com https://www.instagram.com https://*.www.instagram.com https://graph.instagram.com https://*.graph.instagram.com https://i.instagram.com/graphql_www https://graphql.instagram.com https://*.cdninstagram.com https://api.instagram.com https://i.instagram.com https://*.i.instagram.com https://*.od.instagram.com wss://www.instagram.com wss://edge-chat.instagram.com https://*.facebook.com https://*.fbcdn.net https://*.facebook.net chrome-extension://boadgeojelhgndaghljhdicfkmllpafd blob:; worker-src 'self' blob: https://www.instagram.com; frame-src 'self' https://instagram.com https://www.instagram.com https://*.instagram.com https://staticxx.facebook.com https://www.facebook.com https://web.facebook.com https://connect.facebook.net https://m.facebook.com https://*.fbsbx.com; object-src 'none'; upgrade-insecure-requests
+header: cross-origin-resource-policy: cross-origin
+header: X-Content-Type-Options: nosniff
+header: X-XSS-Protection: 0
+header: x-ig-push-state: c2
+header: x-aed: 74
+header: Access-Control-Expose-Headers: X-IG-Set-WWW-Claim
+header: x-ig-request-elapsed-time-ms: 52
+header: x-ig-peak-time: 1
+header: Set-Cookie: sessionid=""; Domain=instagram.com; expires=Thu, 01-Jan-1970 00:00:00 GMT; Max-Age=0; Path=/
+header: Set-Cookie: sessionid=""; Domain=.instagram.com; expires=Thu, 01-Jan-1970 00:00:00 GMT; Max-Age=0; Path=/
+header: Set-Cookie: sessionid=""; Domain=i.instagram.com; expires=Thu, 01-Jan-1970 00:00:00 GMT; Max-Age=0; Path=/
+header: Set-Cookie: sessionid=""; Domain=.i.instagram.com; expires=Thu, 01-Jan-1970 00:00:00 GMT; Max-Age=0; Path=/
+header: Set-Cookie: sessionid=""; Domain=www.instagram.com; expires=Thu, 01-Jan-1970 00:00:00 GMT; Max-Age=0; Path=/
+header: Set-Cookie: sessionid=""; Domain=.www.instagram.com; expires=Thu, 01-Jan-1970 00:00:00 GMT; Max-Age=0; Path=/
+header: Set-Cookie: sessionid=""; expires=Thu, 01-Jan-1970 00:00:00 GMT; Max-Age=0; Path=/
+header: x-ig-origin-region: ncg
+header: X-FB-TRIP-ID: 1679558926
+header: Alt-Svc: h3=":443"; ma=86400
+header: Connection: keep-alive
+header: Content-Length: 0
+send: b'GET /accounts/login/?next=/api/v1/web/comments/2975611314144649000/add/ HTTP/1.1\r\nHost: www.instagram.com\r\nuser-agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:107.0) Gecko/20100101 Firefox/107.0\r\nAccept-Encoding: gzip, deflate\r\nAccept: */*\r\nConnection: keep-alive\r\nx-requested-with: XMLHttpRequest\r\nreferer: https://www.instagram.com/p/ClLfrmJOZ8o/\r\nx-csrftoken: vgd76c4TPM8NBpMAG1ikt1kB2s1ulqeP\r\nCookie: csrftoken=vgd76c4TPM8NBpMAG1ikt1kB2s1ulqeP; ig_did=F88AE012-AD14-4603-8A60-59AC965067EE; ig_nrcb=1; mid=Y4NEXgAEAAFM4lpwi-79kwi0MDlC\r\n\r\n'
+reply: 'HTTP/1.1 200 OK\r\n'
+header: Content-Encoding: gzip
+header: accept-ch-lifetime: 4838400
+header: accept-ch: sec-ch-prefers-color-scheme
+header: reporting-endpoints: 
+header: cross-origin-opener-policy: unsafe-none
+header: Vary: Sec-Fetch-Site, Sec-Fetch-Mode
+header: Vary: Accept-Encoding
+header: Strict-Transport-Security: max-age=15552000
+header: Content-Type: text/html; charset="utf-8"
+header: X-FB-Debug: 2RIdcvR5rtDjAED37HlSJPRY13LZ3UvUm1V9RLtX7Bdiqdzi4XDSiLAVdHjZwznb7xASNbSKKWehB2E71qeazQ==
+header: Date: Sun, 27 Nov 2022 11:09:32 GMT
+header: Priority: u=3,i
+header: X-FB-TRIP-ID: 1679558926
+header: Alt-Svc: h3=":443"; ma=86400
+header: Transfer-Encoding: chunked
+header: Connection: keep-alive

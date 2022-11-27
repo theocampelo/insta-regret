@@ -1,33 +1,51 @@
 #!/usr/bin/python3
 
-import time, re
+import sys
+from os.path import exists
+import time, re, requests as r
+from getpass import getpass
 from bs4 import BeautifulSoup
-import login_instagram as li
-import comment_post as cp
-import get_post_id as gi
 
-#import debug_requests
+from utils import auth as a
+from utils import post as p
+from utils import parser
+from utils import debug
 
-# Filtragem do arquivo CSV
-filename = "followers.csv"
-#filename = "test.csv"
-f = open(filename, 'r')
-followers = list()
+args = parser.args
 
-# Adiciona os seguidores do CSV na lista
-for line in f: followers.append(re.split(',|\n', str(line))[1])
+def login():
+	print('[LOGIN]')
+	username = input('Username: ')
+	password = getpass()
+	s = a.Session.authenticate(username, password)
 
-# GET Sessão autenticada
-s = li.LoginPage.authenticate()
-post_url = "https://www.instagram.com/p/ClW5xc6O95Q/"
+	return s
 
-# Pega o ID do post
-add_url = "https://www.instagram.com/api/v1/web/comments/" + gi.Post.get_id(s, post_url) + "/add/"
+def single_comment():
+	if not exists("tokens/current.session"):
+		print("* sessão não logada, faça o login para continuar.\n")
+		s = login()
+	else:
+		print("* resumindo sessão de login...\n")
+		s = a.Session.load_cookies()
 
-# Comenta, em loop, a lista de usuários
-for arroba in followers:
-	comment = arroba
-	print(f"* marcando {arroba}")
-	cp.InstagramPost.comment(s, comment, post_url, add_url)
+	print('[POSTAR COMENTÁRIO]')
+	post_url = args.c[0]
+	comment  = args.c[1]
 
-	time.sleep(10)
+	print(f"* postando comentário: {comment}")
+	p.Post.comment(s, comment, post_url)
+
+METHOD_MAP = {
+	'l':login,
+	'c':single_comment
+}
+
+arg_values = list(vars(args).values())
+
+if arg_values[0] == True:
+	METHOD_MAP['l']()
+else:
+	for i, value in enumerate(arg_values):
+		if value != (None or False):
+			list(METHOD_MAP.values())[i]()
