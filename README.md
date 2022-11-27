@@ -1,4 +1,4 @@
-# insta-regret (python instagram bot)
+# insta-regret (python instagram tools)
 
 Just messing around with Instagram web requests.
 
