@@ -16,3 +16,4 @@ python3 main.py -c <post_url> "Comment goes here"
 
 ### Notes
 * Storing & loading your current.session with pickle doesn't work
+* To make a second request you must log in again (remove tokens/current.session file) - to be fixed
