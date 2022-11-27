@@ -41,11 +41,10 @@ METHOD_MAP = {
 	'c':single_comment
 }
 
-arg_values = list(vars(args).values())
+# Reformar interface de
+# parsing/execução de métodos
 
 if arg_values[0] == True:
 	METHOD_MAP['l']()
 else:
-	for i, value in enumerate(arg_values):
-		if value != (None or False):
-			list(METHOD_MAP.values())[i]()
+	METHOD_MAP['c']()
